@@ -7,4 +7,4 @@ Emotion based music recommender system
 - [ ] Lyrics Analysis ( on my own )/ Get supervised data 
 - [ ] Create emotion based algo - hindi and english both
 - [ ] Integrate with clone and deploy
-- [ ] Wev3 rtc
+- [ ] Web3 rtc
