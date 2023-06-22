@@ -2,7 +2,7 @@
 Emotion based music recommender system
 
 ## Plan of action 
-- [-] Spotify clone Ver 1 - Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind
+- [x] Spotify clone Ver 1 - Next 13.4, React, Stripe, Supabase, PostgreSQL, Tailwind
 - [ ] Spotify clone Ver 2 - With Spotify API (optional)
 - [ ] Lyrics Analysis / Get supervised data 
 - [ ] Create emotion based algo - hindi and english both
