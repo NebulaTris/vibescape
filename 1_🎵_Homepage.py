@@ -200,12 +200,12 @@ with col1:
     if btn:
         switch_page("Spotify")
 
-with col2:
+with col3:
     btn2 = st.button("Youtube")
     if btn2:
         switch_page("Youtube")
 
-with col3:
-    btn3 = st.button("Saavn")
+with col2:
+    btn3 = st.button("Soundcloud")
     if btn3:
-        switch_page("Saavn")
+        switch_page("Soundcloud")

@@ -108,105 +108,187 @@ with col1:
     hindi = st.button("Hindi")
     if hindi:
         if st.session_state["run"] == "Happy":
-            # webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4mS880sTV9QE?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
             
     bengali = st.button("Bengali")
     if bengali:
         if st.session_state["run"] == "Happy":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sKYXN4FEWLpg4FiJlxSrN?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
             
     marathi = st.button("Marathi")
     if marathi:
         if st.session_state["run"] == "Happy":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sKYXN4FEWLpg4FiJlxSrN?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
    
 with col2:
    english = st.button("English")
    if english:
         if st.session_state["run"] == "Happy":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sKYXN4FEWLpg4FiJlxSrN?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
             
    punjabi = st.button("Punjabi")
    if punjabi:
         if st.session_state["run"] == "Happy":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sKYXN4FEWLpg4FiJlxSrN?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
             
    telugu = st.button("Telugu")
    if telugu:
         if st.session_state["run"] == "Happy":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DWTwbZHrJRIgD?si=df5b7bbf752b4e11")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Sad":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT")
+           components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Angry":
-           webbrowser.open_new_tab("https://open.spotify.com/playlist/7pS8tMgJgzQ8XSGpOajOqb")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Fear":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7EZ4lWeM1OLxZYfGmhDbJI")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Surprise":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/7vatYrf39uVaZ8G2cVtEik")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         elif st.session_state["run"] == "Neutral":
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/37i9dQZF1DX0XUfTFmNBRM")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
         else:
-            webbrowser.open_new_tab("https://open.spotify.com/playlist/3sKYXN4FEWLpg4FiJlxSrN")
+            components.html(
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3sKYXN4FEWLpg4FiJlxSrN?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """,height=600)
+
