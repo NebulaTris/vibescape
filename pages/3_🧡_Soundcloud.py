@@ -109,36 +109,105 @@ with col1:
     hindi = st.button("Hindi")
     if hindi:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/imaginedragons/demons")
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Sad":
-           components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Angry":
-            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pS8tMgJgzQ8XSGpOajOqb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Fear":
-            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Surprise":
-            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Neutral":
-            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         else:
-            components.html(
-            """<iframe style="border-radius:12px" src="https://www.jiosaavn.com/featured/best-of-romance-hindi/SBKnUgjNeMIwkg5tVhI3fw__" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            """,height=600)
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
 
     bengali = st.button("Bengali")
+    if bengali:
+        if st.session_state["run"] == "Happy":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Sad":
+           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Angry":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Fear":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Surprise":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Neutral":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        else:
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+    
     marathi = st.button("Marathi")
+    if marathi:
+        if st.session_state["run"] == "Happy":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Sad":
+           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Angry":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Fear":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Surprise":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        elif st.session_state["run"] == "Neutral":
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+        else:
+            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
    
 with col2:
    english = st.button("English")
+   if english:
+        if st.session_state["run"] == "Happy":
+            st_player("https://soundcloud.com/gabriela-astudillo-398435247/sets/happy-english-music")
+        elif st.session_state["run"] == "Sad":
+           st_player("https://soundcloud.com/jishnu-rajwani-695997535/sets/famous-english-sad-songs-of")
+        elif st.session_state["run"] == "Angry":
+            st_player("https://soundcloud.com/thomashayden/sets/tech-house-vibes-only")
+        elif st.session_state["run"] == "Fear":
+            st_player("https://soundcloud.com/tito-tito-675324717/sets/horror-english")
+        elif st.session_state["run"] == "Surprise":
+            st_player("https://soundcloud.com/manea-claudia/sets/top-love-songs-2022-playlist-1")
+        elif st.session_state["run"] == "Neutral":
+            st_player("https://soundcloud.com/sejal-agarkar/sets/english-songs-hits")
+        else:
+            st_player("https://soundcloud.com/mona-khaled-858700005/sets/english-cringe")
+            
    punjabi = st.button("Punjabi")
+   if punjabi:
+        if st.session_state["run"] == "Happy":
+            st_player("https://soundcloud.com/danyal-safir/sets/punjabi-party-songs-2022")
+        elif st.session_state["run"] == "Sad":
+           st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-sad-songs-2023")
+        elif st.session_state["run"] == "Angry":
+            st_player("https://soundcloud.com/jas-singh-31/sets/gym-punjabi-playlist")
+        elif st.session_state["run"] == "Fear":
+            st_player("https://soundcloud.com/user-94762183/timmy-trumpet-punjabi-x-code_pandorum-murda-fvck-riddim-x-horror-noise-ofdts-mashup")
+        elif st.session_state["run"] == "Surprise":
+            st_player("https://soundcloud.com/itslovesmusic/sets/top-50-punjabi-songs-2022-1")
+        elif st.session_state["run"] == "Neutral":
+            st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-hits-songs-2023")
+        else:
+            st_player("https://soundcloud.com/gvdotbnerxpu/sets/bad-punjabi-remix")
+            
    telugu = st.button("Telugu")
+   if telugu:
+        if st.session_state["run"] == "Happy":
+            st_player("https://soundcloud.com/sumit-indoria/sets/telugu-party-time")
+        elif st.session_state["run"] == "Sad":
+           st_player("https://soundcloud.com/user-738522704/sets/sad-telugu-songs")
+        elif st.session_state["run"] == "Angry":
+            st_player("https://soundcloud.com/user-692822299/sets/telugu-workout-remix")
+        elif st.session_state["run"] == "Fear":
+            st.write("No such playlist found , hence default playlist is being played.")
+            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+        elif st.session_state["run"] == "Surprise":
+            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+        elif st.session_state["run"] == "Neutral":
+            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+        else:
+            st.write("No such playlist found , hence default playlist is being played.")
+            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+   
