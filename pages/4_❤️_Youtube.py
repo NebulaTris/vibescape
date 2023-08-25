@@ -98,8 +98,9 @@ right: 2rem;
 add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Vibescape-Youtube")
+st.title("❤️ Vibescape-Youtube")
 st.sidebar.success("Youtube has been selected as your music player.")
+st.sidebar.text("Developed by Shambhavi")
 st.write("You current emotion is: " , st.session_state["run"])
 
 col1, col2 = st.columns(2)

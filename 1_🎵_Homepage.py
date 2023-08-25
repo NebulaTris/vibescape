@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 import av
-import webbrowser
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -113,6 +112,7 @@ add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("Vibescape 🎉🎶")
 st.sidebar.success("Select a page below.")
+st.sidebar.text("Developed by Shambhavi")
 
 st.markdown("**Hey there, emotion explorer! Are you ready for a wild ride through the rollercoaster of feelings?** 🎢🎵")
 st.markdown("**Welcome to Vibescape, where our snazzy AI meets your wacky emotional world head-on! We've got our virtual goggles on (nope, not really, but it sounds cool** 😎 **) to analyze your emotions using a webcam. And what do we do with all those emotions, you ask? We turn them into the most toe-tapping, heartwarming, and occasionally hilarious music playlists you've ever heard!** 🕺💃")
@@ -201,7 +201,7 @@ if btn:
         
 col1, col2, col3 = st.columns(3)
 
-with col1:
+with col2:
     btn = st.button("Spotify")
     if btn:
         switch_page("Spotify")
@@ -211,7 +211,7 @@ with col3:
     if btn2:
         switch_page("Youtube")
 
-with col2:
+with col1:
     btn3 = st.button("Soundcloud")
     if btn3:
         switch_page("Soundcloud")
