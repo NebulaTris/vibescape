@@ -112,51 +112,53 @@ with col1:
         if st.session_state["run"] == "Happy":
             st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+           st_player("https://soundcloud.com/aryan-ambuj-752291555/sets/sad-hindi-songs-a-little")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/user-905375441/sets/hindi-rap-songs")
         elif st.session_state["run"] == "Fear":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/narendraswapnil/sets/aavirbhaav-a-hindi-horror")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/maryam-zeb-592867892/sets/hot-hindi-hits-2010-2020")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/user635881277/sets/hindi-hits")
         else:
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("hhttps://soundcloud.com/user635881277/sets/hindi-hits")
 
     bengali = st.button("Bengali")
     if bengali:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/h-a-i/sets/bengali-songs")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+           st_player("https://soundcloud.com/rechna-begum/sets/bengali-songs")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/dj-aryan-music")
         elif st.session_state["run"] == "Fear":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st.write("No such playlist found , hence default playlist is being played.")
+            st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/ayesha-laskar/sets/bengali-songs")
         else:
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/ayesha-laskar/sets/bengali-songs")
     
     marathi = st.button("Marathi")
     if marathi:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+           st_player("https://soundcloud.com/ghostblogger/break-up-ke-baad-marathi-song")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/sandip-vadde-915668005/sets/marathi-rap")
         elif st.session_state["run"] == "Fear":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st.write("No such playlist found , hence default playlist is being played.")
+            st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
         else:
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
    
 with col2:
    english = st.button("English")

@@ -143,70 +143,71 @@ with col1:
     marathi = st.button("Marathi")
     if marathi:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/playlist?list=PLN_pFG_Bv6D4-gpRS06J2auY87DQaEDuo")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+           st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpcfrn_McAvi80s5bGuWr9f")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpw79fcOQJDi3FdMcYwWZki")
         elif st.session_state["run"] == "Fear":
             st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/watch?v=imUUogeGUio")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/watch?v=xUSTF4Gyj8M")
         else:
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/watch?v=xUSTF4Gyj8M")
    
 with col2:
    english = st.button("English")
    if english:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/gabriela-astudillo-398435247/sets/happy-english-music")
+            st_player("https://www.youtube.com/watch?v=ONM4uXLe8CU")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/jishnu-rajwani-695997535/sets/famous-english-sad-songs-of")
+           st_player("https://www.youtube.com/watch?v=BwleOnML1Fo")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/thomashayden/sets/tech-house-vibes-only")
+            st_player("https://www.youtube.com/watch?v=YnezhNgzdss")
         elif st.session_state["run"] == "Fear":
-            st_player("https://soundcloud.com/tito-tito-675324717/sets/horror-english")
+            st_player("https://www.youtube.com/watch?v=G-YNNJIe2Vk")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/manea-claudia/sets/top-love-songs-2022-playlist-1")
+            st_player("https://www.youtube.com/watch?v=zStYh2eHOWk")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/sejal-agarkar/sets/english-songs-hits")
+            st_player("https://www.youtube.com/watch?v=KNaCJYX-mgY")
         else:
-            st_player("https://soundcloud.com/mona-khaled-858700005/sets/english-cringe")
+            st_player("https://www.youtube.com/watch?v=KNaCJYX-mgY")
             
    punjabi = st.button("Punjabi")
    if punjabi:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/danyal-safir/sets/punjabi-party-songs-2022")
+            st_player("https://www.youtube.com/watch?v=heXb7XQYVKo")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-sad-songs-2023")
+           st_player("https://www.youtube.com/watch?v=8Jq0E9ryVEc")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/jas-singh-31/sets/gym-punjabi-playlist")
+            st_player("https://www.youtube.com/watch?v=Pha76iGaauM")
         elif st.session_state["run"] == "Fear":
-            st_player("https://soundcloud.com/user-94762183/timmy-trumpet-punjabi-x-code_pandorum-murda-fvck-riddim-x-horror-noise-ofdts-mashup")
+            st.write("No such playlist found , hence default playlist is being played.")
+            st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/itslovesmusic/sets/top-50-punjabi-songs-2022-1")
+            st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-hits-songs-2023")
+            st_player("https://www.youtube.com/watch?v=QbXLf5QvNUM")
         else:
-            st_player("https://soundcloud.com/gvdotbnerxpu/sets/bad-punjabi-remix")
+            st_player("https://www.youtube.com/watch?v=QbXLf5QvNUM")
             
    telugu = st.button("Telugu")
    if telugu:
         if st.session_state["run"] == "Happy":
-            st_player("https://soundcloud.com/sumit-indoria/sets/telugu-party-time")
+            st_player("https://www.youtube.com/playlist?list=PLMpEfaKcGjpWEgNtdnsvLX6LzQL0UC0EM")
         elif st.session_state["run"] == "Sad":
-           st_player("https://soundcloud.com/user-738522704/sets/sad-telugu-songs")
+           st_player("https://www.youtube.com/watch?v=yvnsgYQyGXo")
         elif st.session_state["run"] == "Angry":
-            st_player("https://soundcloud.com/user-692822299/sets/telugu-workout-remix")
+            st_player("https://www.youtube.com/watch?v=CYj6li9939w")
         elif st.session_state["run"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+            st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
         elif st.session_state["run"] == "Surprise":
-            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+            st_player("https://www.youtube.com/watch?v=ADqgenM4uqQ")
         elif st.session_state["run"] == "Neutral":
-            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+            st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
         else:
             st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+            st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
