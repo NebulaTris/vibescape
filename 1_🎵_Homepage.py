@@ -1,12 +1,22 @@
+from pathlib import Path
+#Imports for streamlit
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer
 import av
 import cv2
+from streamlit_webrtc import (
+    RTCConfiguration,
+    VideoProcessorBase,
+    WebRtcMode,
+    webrtc_streamer,
+)
+from streamlit_extras.switch_page_button import switch_page
+from streamlit_extras.app_logo import add_logo
+
+#Imports for ml model
 import numpy as np
 import mediapipe as mp
 from keras.models import load_model
-from streamlit_extras.switch_page_button import switch_page
-from streamlit_extras.app_logo import add_logo
+
 
 st.set_page_config(
     page_title="Vibescape",
@@ -121,6 +131,14 @@ st.markdown("**Feeling like a happy-go-lucky panda today? We've got a playlist f
 st.markdown("**So, get ready for a whirlwind of emotions and music. Vibescape is here to turn your webcam into a mood ring, your screen into a dance floor, and your heart into a DJ booth. What's next? Well, that's entirely up to you and your ever-changing feelings!**")
 st.markdown("**So, strap in** 🚀 **, hit that webcam** 📷 **, and let the musical journey begin! Vibescape is your ticket to a rollercoaster of emotions, all set to your favorite tunes.** 🎢🎵")
 
+RTC_CONFIGURATION = RTCConfiguration(
+    {"iceServers": [{
+        "urls": ["stun:stun.l.google.com:19302"]
+    }]})
+
+# CWD path
+HERE = Path(__file__).parent
+
 model = load_model("model.h5")
 label = np.load("label.npy")
 
@@ -140,8 +158,8 @@ except:
     emotion = ""
 
     
-class EmotionProcessor:
-    def recv(self,frame):
+class EmotionProcessor(VideoProcessorBase):
+    def recv(self, frame: av.VideoFrame) -> av.VideoFrame:
         frm = frame.to_ndarray(format="bgr24")
         frm = cv2.flip(frm, 1)  
         res = holis.process(cv2.cvtColor(frm, cv2.COLOR_BGR2RGB))
@@ -186,7 +204,11 @@ class EmotionProcessor:
     
 
 if st.session_state["run"] != "false":
-    webrtc_streamer(key="key", desired_playing_state=True , video_processor_factory=EmotionProcessor)
+    webrtc_streamer(key="key", desired_playing_state=True ,mode=WebRtcMode.SENDRECV,  rtc_configuration=RTC_CONFIGURATION, video_processor_factory=EmotionProcessor, media_stream_constraints={
+            "video": True,
+            "audio": False
+        },
+        async_processing=True)
 btn = st.button("Check your emotion")
 
 if btn:
