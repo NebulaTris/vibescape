@@ -108,6 +108,7 @@ if "run" not in st.session_state:
     option = st.selectbox(
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
+    st.write("You have selected : " , option)
     if option == "Happy":
         st.session_state["run"] = "Happy"
     elif option == "Sad":
