@@ -1,4 +1,4 @@
-babsl-py==1.4.0
+absl-py==1.4.0
 aiohttp==3.8.5
 aiohttp-retry==2.8.3
 aioice==0.9.0
