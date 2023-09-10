@@ -99,6 +99,8 @@ add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("❤️ Vibescape-Youtube")
+st.markdown(''':red[**Note : It is recommended that you scan your face , for Vibescape to groove with you!**]''')
+
 st.sidebar.success("Youtube has been selected as your music player.")
 st.sidebar.text("Developed by Shambhavi")
 

@@ -100,6 +100,7 @@ add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("🧡 Vibescape-Soundcloud")
+st.markdown(''':orange[**Note : It is recommended that you scan your face , for Vibescape to groove with you!**]''')
 st.sidebar.success("Soundcloud has been selected as your music player.")
 st.sidebar.text("Developed by Shambhavi")
 
