@@ -105,10 +105,9 @@ st.sidebar.text("Developed by Shambhavi")
 
 if "run" not in st.session_state:
     st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Vibescape to groove with you!**")
-    option = st.radio(
+    option = st.selectbox(
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
-    
     if option == "Happy":
         st.session_state["run"] = "Happy"
     elif option == "Sad":
