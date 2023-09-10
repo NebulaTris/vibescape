@@ -46,6 +46,7 @@ pyOpenSSL==23.2.0
 PyQt5==5.15.7
 PyQtWebEngine==5.15.4
 pytest==7.1.2
+python-dotenv==1.0.0
 python-json-logger==2.0.7
 python-lsp-jsonrpc==1.0.0
 queuelib==1.5.0
