@@ -102,7 +102,26 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("🧡 Vibescape-Soundcloud")
 st.sidebar.success("Soundcloud has been selected as your music player.")
 st.sidebar.text("Developed by Shambhavi")
-st.write("You current emotion is: " , st.session_state["run"])
+
+if "run" not in st.session_state:
+    st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Vibescape to groove with you!**")
+    option = st.selectbox(
+    'What''s your vibe today?',
+    ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
+    if option == "Happy":
+        st.session_state["run"] = "Happy"
+    elif option == "Sad":
+        st.session_state["run"] = "Sad"
+    elif option == "Angry":
+        st.session_state["run"] = "Angry"
+    elif option == "Fear":
+        st.session_state["run"] = "Fear"
+    elif option == "Surprise":
+        st.session_state["run"] = "Surprise"
+    else:
+        st.session_state["run"] = "Neutral"
+else:
+    st.write("You current emotion is: " , st.session_state["run"])
 
 col1, col2 = st.columns(2)
 
