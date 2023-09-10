@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 
@@ -6,6 +7,13 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 import polarplot
 import songrecommendations
+
+from dotenv import load_dotenv
+load_dotenv()
+
+
+SPOTIPY_CLIENT_ID=os.getenv('SPOTIPY_CLIENT_ID')
+SPOTIPY_CLIENT_SECRET=os.getenv('SPOTIPY_CLIENT_SECRET')
 
 auth_manager = SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET)
 sp = spotipy.Spotify(auth_manager=auth_manager)
