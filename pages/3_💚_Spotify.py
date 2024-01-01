@@ -109,46 +109,46 @@ if "run" not in st.session_state:
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
     if option == "Happy":
-        st.session_state["run"] = "Happy"
+        st.session_state["emotion"] = "Happy"
     elif option == "Sad":
-        st.session_state["run"] = "Sad"
+        st.session_state["emotion"] = "Sad"
     elif option == "Angry":
-        st.session_state["run"] = "Angry"
+        st.session_state["emotion"] = "Angry"
     elif option == "Fear":
-        st.session_state["run"] = "Fear"
+        st.session_state["emotion"] = "Fear"
     elif option == "Surprise":
-        st.session_state["run"] = "Surprise"
+        st.session_state["emotion"] = "Surprise"
     else:
-        st.session_state["run"] = "Neutral"
+        st.session_state["emotion"] = "Neutral"
 else:
-    st.write("You current emotion is: " , st.session_state["run"])
+    st.write("You current emotion is: " , st.session_state["emotion"])
 
 col1, col2 = st.columns(2)
 
 with col1:
     hindi = st.button("Hindi")
     if hindi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2r9tRVoHG3AMBTvKJ8abOl?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7vatYrf39uVaZ8G2cVtEik?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUfTFmNBRM?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
@@ -159,27 +159,27 @@ with col1:
             
     bengali = st.button("Bengali")
     if bengali:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6xW5Vg6ItVIcGzpWpLxrkE?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/47FrM9FqXeG7l22RZkmoqZ?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcjgclFIY2pu?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0VCG80o22Fb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0m1idUXUOeJ29oaufW0mLQ?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3RiXySA2fqrWlnAU9n3Lv2?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
@@ -190,28 +190,28 @@ with col1:
             
     marathi = st.button("Marathi")
     if marathi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4VyXj7QL7tcyJFM4h1wYe7?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
-           components.html(
+        elif st.session_state["emotion"] == "Sad":
+            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUEPngl1ogec?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5dKWOIUR0lmN5URKUVpV6a?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No playlist available for this emotion. Hence default playlist is being played.")
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX84EApEEEkUc?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8BKauvV4z7b?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX84EApEEEkUc?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
@@ -223,27 +223,27 @@ with col1:
 with col2:
    english = st.button("English")
    if english:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7qK8ma5wgG1?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIgNZCaOGb0Mi?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfgYPpPEriFK?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfIhwClkyzKs?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
@@ -254,28 +254,28 @@ with col2:
             
    punjabi = st.button("Punjabi")
    if punjabi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7QeQjujWh9l?utm_source=generator&theme=0 width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWfmbQgZIznF?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ecJF7ZFkufISEw6SZdKrB?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No playlist available for this emotion. Hence default playlist is being played.")
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZY9CnWbvq8Q?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZY9CnWbvq8Q?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXVJK4aT7pmk?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
@@ -286,27 +286,27 @@ with col2:
             
    telugu = st.button("Telugu")
    if telugu:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2UT3NuRgcHd?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUEWjDsV7AgX?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4H5837Y8I1n?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4JVDfzNmjX17JnfjaziVQe?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcuAVsi45c0d?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6XE7HRLM75P?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)

@@ -203,37 +203,50 @@ class EmotionProcessor(VideoProcessorBase):
         return av.VideoFrame.from_ndarray(frm, format="bgr24")
     
 
-if st.session_state["run"] != "false":
-    webrtc_streamer(key="key", desired_playing_state=True ,mode=WebRtcMode.SENDRECV,  rtc_configuration=RTC_CONFIGURATION, video_processor_factory=EmotionProcessor, media_stream_constraints={
-            "video": True,
-            "audio": False
-        },
-        async_processing=True)
-btn = st.button("Check your emotion")
 
-if btn:
-    if not(emotion):
-        st.warning("Please wait for the emotion to be detected")
-        
+webrtc_streamer(key="key", desired_playing_state=st.session_state.get("run", "") == "true" ,mode=WebRtcMode.SENDRECV,  rtc_configuration=RTC_CONFIGURATION, video_processor_factory=EmotionProcessor, media_stream_constraints={
+        "video": True,
+        "audio": False
+    },
+    async_processing=True)
+
+
+col1, col2, col6 = st.columns([1, 1, 1])
+
+with col1:
+    start_btn = st.button("Start")
+with col6:
+    stop_btn = st.button("Stop")
+
+if start_btn:
+    st.session_state["run"] = "true"
+    st.experimental_rerun()
+
+if stop_btn:
+    st.session_state["run"] = "false"
+    st.experimental_rerun()
+else:
+    if not emotion:
+        pass
     else:
-        np.save("emotion.npy",np.array([""]))
-        st.session_state["run"] = run
-        st.write("Your current emotion is: " ,emotion)
+        np.save("emotion.npy", np.array([""]))
+        st.session_state["emotion"] = run
+        st.success("Your current emotion is: " + emotion)
         st.subheader("Choose your streaming service")
-        
-col1, col2, col3 = st.columns(3)
 
-with col2:
+col3, col4, col5 = st.columns(3)
+
+with col4:
     btn = st.button("Spotify")
     if btn:
         switch_page("Spotify")
 
-with col3:
+with col5:
     btn2 = st.button("Youtube")
     if btn2:
         switch_page("Youtube")
 
-with col1:
+with col3:
     btn3 = st.button("Soundcloud")
     if btn3:
         switch_page("Soundcloud")
