@@ -111,70 +111,70 @@ if "run" not in st.session_state:
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
     if option == "Happy":
-        st.session_state["run"] = "Happy"
+        st.session_state["emotion"] = "Happy"
     elif option == "Sad":
-        st.session_state["run"] = "Sad"
+        st.session_state["emotion"] = "Sad"
     elif option == "Angry":
-        st.session_state["run"] = "Angry"
+        st.session_state["emotion"] = "Angry"
     elif option == "Fear":
-        st.session_state["run"] = "Fear"
+        st.session_state["emotion"] = "Fear"
     elif option == "Surprise":
-        st.session_state["run"] = "Surprise"
+        st.session_state["emotion"] = "Surprise"
     else:
-        st.session_state["run"] = "Neutral"
+        st.session_state["emotion"] = "Neutral"
 else:
-    st.write("You current emotion is: " , st.session_state["run"])
+    st.write("You current emotion is: " , st.session_state["emotion"])
     
 col1, col2 = st.columns(2)
 
 with col1:
     hindi = st.button("Hindi")
     if hindi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=OcmcptbsvzQ")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/watch?v=e6LMUGrN57A")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/playlist?list=PLxNm0dqHxmlupV3dr7uq4Rl8L5nwlGKQA")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://www.youtube.com/watch?v=8joIt7wsayU")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=rtTI1rh9U5M")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/watch?v=EVF_AuhJgLg")
         else:
             st_player("hhttps://www.youtube.com/watch?v=S_TW9h7vUB8&list=RDEMyQ80_Idfp-UOKusrpqoh-g&start_radio=1")
 
     bengali = st.button("Bengali")
     if bengali:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLzxTmXYDR-xXsilCSwT-Bds5w96k2GOXF")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/watch?v=RRbqeGr8mJE")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=_RBlE6Ar8mw")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://www.youtube.com/watch?v=5PtVfECix1M")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=39uMLYTh40Q")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/watch?v=39uMLYTh40Q")
         else:
             st_player("https://www.youtube.com/watch?v=5TJqoxsoXc4")
      
     marathi = st.button("Marathi")
     if marathi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLN_pFG_Bv6D4-gpRS06J2auY87DQaEDuo")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpcfrn_McAvi80s5bGuWr9f")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpw79fcOQJDi3FdMcYwWZki")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=imUUogeGUio")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/watch?v=xUSTF4Gyj8M")
         else:
             st_player("https://www.youtube.com/watch?v=xUSTF4Gyj8M")
@@ -182,53 +182,53 @@ with col1:
 with col2:
    english = st.button("English")
    if english:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=ONM4uXLe8CU")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/watch?v=BwleOnML1Fo")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=YnezhNgzdss")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://www.youtube.com/watch?v=G-YNNJIe2Vk")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=zStYh2eHOWk")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/watch?v=KNaCJYX-mgY")
         else:
             st_player("https://www.youtube.com/watch?v=KNaCJYX-mgY")
             
    punjabi = st.button("Punjabi")
    if punjabi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=heXb7XQYVKo")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/watch?v=8Jq0E9ryVEc")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=Pha76iGaauM")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
             st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/watch?v=QbXLf5QvNUM")
         else:
             st_player("https://www.youtube.com/watch?v=QbXLf5QvNUM")
             
    telugu = st.button("Telugu")
    if telugu:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLMpEfaKcGjpWEgNtdnsvLX6LzQL0UC0EM")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://www.youtube.com/watch?v=yvnsgYQyGXo")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=CYj6li9939w")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
             st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=ADqgenM4uqQ")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
         else:
             st.write("No such playlist found , hence default playlist is being played.")

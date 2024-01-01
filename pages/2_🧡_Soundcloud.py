@@ -110,72 +110,72 @@ if "run" not in st.session_state:
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
     if option == "Happy":
-        st.session_state["run"] = "Happy"
+        st.session_state["emotion"] = "Happy"
     elif option == "Sad":
-        st.session_state["run"] = "Sad"
+        st.session_state["emotion"] = "Sad"
     elif option == "Angry":
-        st.session_state["run"] = "Angry"
+        st.session_state["emotion"] = "Angry"
     elif option == "Fear":
-        st.session_state["run"] = "Fear"
+        st.session_state["emotion"] = "Fear"
     elif option == "Surprise":
-        st.session_state["run"] = "Surprise"
+        st.session_state["emotion"] = "Surprise"
     else:
-        st.session_state["run"] = "Neutral"
+        st.session_state["emotion"] = "Neutral"
 else:
-    st.write("You current emotion is: " , st.session_state["run"])
+    st.write("You current emotion is: " , st.session_state["emotion"])
 
 col1, col2 = st.columns(2)
 
 with col1:
     hindi = st.button("Hindi")
     if hindi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/aryan-ambuj-752291555/sets/sad-hindi-songs-a-little")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/user-905375441/sets/hindi-rap-songs")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://soundcloud.com/narendraswapnil/sets/aavirbhaav-a-hindi-horror")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/maryam-zeb-592867892/sets/hot-hindi-hits-2010-2020")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/user635881277/sets/hindi-hits")
         else:
             st_player("hhttps://soundcloud.com/user635881277/sets/hindi-hits")
 
     bengali = st.button("Bengali")
     if bengali:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/h-a-i/sets/bengali-songs")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/rechna-begum/sets/bengali-songs")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/dj-aryan-music")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
             st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/ayesha-laskar/sets/bengali-songs")
         else:
             st_player("https://soundcloud.com/ayesha-laskar/sets/bengali-songs")
     
     marathi = st.button("Marathi")
     if marathi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/ghostblogger/break-up-ke-baad-marathi-song")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/sandip-vadde-915668005/sets/marathi-rap")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
             st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
         else:
             st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
@@ -183,52 +183,52 @@ with col1:
 with col2:
    english = st.button("English")
    if english:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/gabriela-astudillo-398435247/sets/happy-english-music")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/jishnu-rajwani-695997535/sets/famous-english-sad-songs-of")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/thomashayden/sets/tech-house-vibes-only")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://soundcloud.com/tito-tito-675324717/sets/horror-english")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/manea-claudia/sets/top-love-songs-2022-playlist-1")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/sejal-agarkar/sets/english-songs-hits")
         else:
             st_player("https://soundcloud.com/mona-khaled-858700005/sets/english-cringe")
             
    punjabi = st.button("Punjabi")
    if punjabi:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/danyal-safir/sets/punjabi-party-songs-2022")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-sad-songs-2023")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/jas-singh-31/sets/gym-punjabi-playlist")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st_player("https://soundcloud.com/user-94762183/timmy-trumpet-punjabi-x-code_pandorum-murda-fvck-riddim-x-horror-noise-ofdts-mashup")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/itslovesmusic/sets/top-50-punjabi-songs-2022-1")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-hits-songs-2023")
         else:
             st_player("https://soundcloud.com/gvdotbnerxpu/sets/bad-punjabi-remix")
             
    telugu = st.button("Telugu")
    if telugu:
-        if st.session_state["run"] == "Happy":
+        if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/sumit-indoria/sets/telugu-party-time")
-        elif st.session_state["run"] == "Sad":
+        elif st.session_state["emotion"] == "Sad":
            st_player("https://soundcloud.com/user-738522704/sets/sad-telugu-songs")
-        elif st.session_state["run"] == "Angry":
+        elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/user-692822299/sets/telugu-workout-remix")
-        elif st.session_state["run"] == "Fear":
+        elif st.session_state["emotion"] == "Fear":
             st.write("No such playlist found , hence default playlist is being played.")
             st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
-        elif st.session_state["run"] == "Surprise":
+        elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
-        elif st.session_state["run"] == "Neutral":
+        elif st.session_state["emotion"] == "Neutral":
             st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
         else:
             st.write("No such playlist found , hence default playlist is being played.")
